@@ -3,7 +3,7 @@
 #O que é uma suíte de teste?
 #Uma suíte de testes é uma coleção de casos de teste ou specs destinados a testar um programa para verificar um determinado comportamento.
 
-require_relative '../../app/bank'
+require_relative "../../app/bank"
 
 describe ContaPoupanca do
 
@@ -14,7 +14,7 @@ describe ContaPoupanca do
                 @cp.saca(200.00)
             end
             it 'entao atualiza saldo' do
-                expect(@cp.saldo).to eql 800.00
+                expect(@cp.saldo).to eql 798.00
             end
         end
 
